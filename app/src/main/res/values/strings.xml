@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ProjetoDio</string>
+    <string name="selectLanguage">"  Select language"</string>
+
 </resources>
