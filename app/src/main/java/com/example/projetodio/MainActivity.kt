@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
    private lateinit var binding: ActivityMainBinding
 
-   private var items= arrayListOf("English", "Hind", "Bengali", "Gujarati","Portuguese", "Tamil", "Telugu")
+   private var items= arrayListOf("English", "Hind", "Bengali", "Gujarati","Portuguese", "Tamil", "Telugu", "Spanish")
 
     private var conditions= DownloadConditions.Builder()
         .requireWifi()
@@ -75,14 +75,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-//    private fun fecharTeclado( view: View) {
-//
-//        if (view.isFocusable) {
-//            view.requestFocus()
-//        }
-//        var inputMethodManager : InputMethodManager = getService
-//    }
-
 
     private fun selecFrom(): String {
         return  when(binding.languageFrom.text.toString()){
@@ -91,6 +83,7 @@ class MainActivity : AppCompatActivity() {
             "Hind" -> TranslateLanguage.HINDI
             "Bengali" -> TranslateLanguage.BENGALI
             "Gujarati" -> TranslateLanguage.GUJARATI
+            "Spanish" -> TranslateLanguage.SPANISH
             "Tamil" -> TranslateLanguage.TAMIL
             "Telegu" -> TranslateLanguage.TELUGU
             "Portuguese" -> TranslateLanguage.PORTUGUESE
@@ -106,6 +99,7 @@ class MainActivity : AppCompatActivity() {
             "Hind" -> TranslateLanguage.HINDI
             "Bengali" -> TranslateLanguage.BENGALI
             "Gujarati" -> TranslateLanguage.GUJARATI
+            "Spanish" -> TranslateLanguage.SPANISH
             "Tamil" -> TranslateLanguage.TAMIL
             "Telegu" -> TranslateLanguage.TELUGU
 
